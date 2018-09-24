@@ -2,7 +2,7 @@
 # Created for CSAW365 CTF pwn challenge "pilot"
 # This is an example of using pwntools on a local process; specifically, this
 # showcases spawning GDB via pwntools and breaking at a specific point to aid
-# in debugging how the local process that pwntools interacs with
+# in debugging how the local process that pwntools interacts with
 # responds to the exploit
 
 from pwn import *
